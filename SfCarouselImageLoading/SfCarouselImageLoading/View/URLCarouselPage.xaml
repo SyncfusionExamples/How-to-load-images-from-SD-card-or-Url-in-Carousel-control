@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SfCarouselImageLoading.URLCarouselPage"
+              xmlns:local="clr-namespace:SfCarouselImageLoading"
+             xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms">
+    <ContentPage.BindingContext>
+        <local:URLCarouselViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <DataTemplate x:Key="itemTemplate">
+            <Image Source="{Binding Image}"  Aspect="AspectFit"/>
+        </DataTemplate>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <Grid>
+            <carousel:SfCarousel x:Name="carousel"  
+                             ItemTemplate="{StaticResource itemTemplate}" 
+                             ItemsSource="{Binding ImageCollection}" 
+                             HeightRequest="400" 
+                             WidthRequest="800" 
+                             ItemHeight="{OnPlatform Android='250',iOS='300'}"
+                             ItemWidth="{OnPlatform Android='170',iOS='150'}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

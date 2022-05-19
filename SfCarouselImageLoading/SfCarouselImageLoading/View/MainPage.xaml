@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SfCarouselImageLoading.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Carousel Control" FontSize="20" HorizontalOptions="Center"/>
+            <Button Text="URL Image Carousel" Clicked="URLButtonClicked"/>
+            <Button Text="SD Image Carousel" Clicked="SDButtonClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
