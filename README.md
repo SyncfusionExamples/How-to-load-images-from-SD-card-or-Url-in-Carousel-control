@@ -3,15 +3,14 @@ This repository contains samples on how to load images from SD card or Url in ca
 
 ## Project Overview
 
-**Repository Description**  
 This repository contains a sample project intended to demonstrate a specific implementation or feature. The project structure is kept minimal to help users focus on understanding the core concept demonstrated by the sample.
 
 ## Purpose
 The primary purpose of this project is to provide a simple reference implementation that can be used for learning, experimentation, or extension.
 
 ## Prerequisites
-- A suitable development environment based on the technologies used in this project
-- Basic knowledge of the framework or platform applicable to the sample
+- Compatible IDE (Visual Studio / VS Code / Android Studio)  
+- Required SDK (e.g., .NET SDK, Android SDK, or Node.js)  
 
 ## Installation
 1. Clone this repository to your local machine.
